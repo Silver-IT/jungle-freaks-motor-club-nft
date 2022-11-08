@@ -1,0 +1,33 @@
+import holdersMint from "./suites/holdersMint.test";
+import supportedInterfaces from "./suites/supportedInterfaces.test";
+import publicVariables from "./suites/publicVariables.test";
+import receivingEther from "./suites/receivingEther.test";
+import withdrawingEther from "./suites/withdrawingEther.test";
+import saleState from "./suites/saleState.test";
+import signingTx from "./suites/signingTx.test";
+import allowListMint from "./suites/allowListMint.test";
+import publicMint from "./suites/publicMint.test";
+import baseURI from "./suites/baseURI.test";
+import reserveMint from "./suites/reserveMint.test";
+import giveawayMint from "./suites/giveawayMint.test";
+import holdersGuaranteeMint from "./suites/holdersGuaranteeMint.test";
+import burn from "./suites/burn.test";
+import moderator from "./suites/moderator.test";
+
+describe("JungleFreaksMotorClub", function () {
+  describe("When supporting interfaces", supportedInterfaces.bind(this));
+  describe("When getting public variables", publicVariables.bind(this));
+  describe("When setting baseURI", baseURI.bind(this));
+  describe("When signing tx", signingTx.bind(this));
+  describe("When receiving ether", receivingEther.bind(this));
+  describe("When withdrawing ether", withdrawingEther.bind(this));
+  describe("When changing sale state", saleState.bind(this));
+  describe("When updating ownership", moderator.bind(this));
+  describe("When allow list minting", allowListMint.bind(this));
+  describe("When holders guarantee minting", holdersGuaranteeMint.bind(this));
+  describe("When holders minting", holdersMint.bind(this));
+  describe("When public minting", publicMint.bind(this));
+  describe("When minting reserved", reserveMint.bind(this));
+  describe("When minting giveaway", giveawayMint.bind(this));
+  describe("When burning", burn.bind(this));
+});
